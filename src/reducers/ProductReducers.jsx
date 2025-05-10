@@ -53,5 +53,7 @@ export function productReducer(state, action) {
         originalSumTotal: state.originalSumTotal + newItem.originalTotal,
       };
     }
+    default:
+      throw Error("productReducer - unknown action:", action.type);
   }
 }
