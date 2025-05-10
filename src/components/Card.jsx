@@ -2,9 +2,8 @@ import styles from "./Card.module.css";
 import Button from "./Button";
 import Input from "./Input";
 import { useContext } from "react";
-import ProductContext from "./ProductContext";
 
-// import ProductContext from "./ProductContext";
+import ProductContext from "../context/ProductContext";
 
 function Card() {
   const {
@@ -18,6 +17,7 @@ function Card() {
     handlerChangePrice,
     handlerAddProduct,
   } = useContext(ProductContext);
+
   return (
     <div className={styles.container}>
       <div className={styles.name}>{name}</div>
