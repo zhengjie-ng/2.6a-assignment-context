@@ -18,7 +18,7 @@ export function productReducer(state, action) {
       }
       return newState;
     }
-    case "PLUS_MINUS": {
+    case "MINUS_COUNT": {
       let newState = { ...state };
       newState.count = state.count - 1;
       if (newState.count < 0) {

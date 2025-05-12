@@ -11,7 +11,7 @@ export function ProductProvider({ children }) {
   };
 
   const handlerMinus = () => {
-    dispatch({ type: "PLUS_MINUS" });
+    dispatch({ type: "MINUS_COUNT" });
   };
 
   const handlerChangeName = (value) => {
